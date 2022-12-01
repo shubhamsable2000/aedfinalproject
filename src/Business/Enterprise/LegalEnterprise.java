@@ -4,10 +4,20 @@
  */
 package Business.Enterprise;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author shubhamsable
  */
-public class LegalEnterprise {
+public class LegalEnterprise extends Enterprise {
+    
+    public LegalEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.Legal);
+    }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
     
 }

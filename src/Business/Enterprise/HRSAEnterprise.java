@@ -4,10 +4,20 @@
  */
 package Business.Enterprise;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author shubhamsable
  */
-public class HRSAEnterprise {
+public class HRSAEnterprise extends Enterprise {
+    
+    public HRSAEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.HRSA);
+    }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
     
 }
