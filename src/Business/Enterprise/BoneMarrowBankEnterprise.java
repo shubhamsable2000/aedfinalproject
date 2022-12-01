@@ -4,10 +4,20 @@
  */
 package Business.Enterprise;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author shubhamsable
  */
-public class BoneMarrowBankEnterprise {
+public class BoneMarrowBankEnterprise extends Enterprise {
+    
+    public BoneMarrowBankEnterprise(String boneName){
+        super(boneName,EnterpriseType.BoneMarrowBank);
+    }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
     
 }
