@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *
  * @author shubhamsable
  */
-public class AdminOrganization {
+
     
     public class AdminOrganization extends Organization{
 
@@ -26,4 +26,4 @@ public class AdminOrganization {
     }
      
     
-}
+
