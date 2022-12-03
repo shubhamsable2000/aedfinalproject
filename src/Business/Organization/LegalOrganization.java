@@ -4,10 +4,23 @@
  */
 package Business.Organization;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author shubhamsable
  */
-public class LegalOrganization {
+public class LegalOrganization extends Organization{
+
+    public LegalOrganization() {
+        super(Organization.LegalType.LegalOfficer.getValue());
+    }
     
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        ArrayList<Role> roles = new ArrayList();
+        roles.add(new LegalOfficerRole());
+        return roles;
+    }
+     
 }
